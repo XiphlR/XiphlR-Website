@@ -14,7 +14,7 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   
-  box-shadow: 0 0 20px rgba(0, 0, 0, 1); 
+  box-shadow: 0 0 12px rgba(0, 0, 0); 
 }
 
 .app-container {
