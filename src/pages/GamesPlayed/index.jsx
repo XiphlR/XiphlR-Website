@@ -32,20 +32,18 @@ function GamesPlayed() {
       ) : (
         <ul className="game-list">
           {games.map((game) => (
-            <li key={game.id} className="game-list-item">
-              <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                <img 
-                  src={game.image_url} 
-                  alt={game.title} 
-                  style={{ width: '50px', height: '50px', borderRadius: '8px', objectFit: 'cover' }} 
-                />
-                <div>
-                  <h4>{game.title}</h4>
-                  <p style={{ fontSize: '0.85em', color: '#666' }}>Username: {game.ingame_name}</p>
-                  <p style={{ fontSize: '0.85em', color: '#666' }}>UID: {game.uid}</p>
-                </div>
+            <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+              <img 
+                src={game.image_url} 
+                alt={game.title} 
+                style={{ width: '50px', height: '50px', borderRadius: '8px', objectFit: 'cover' }} 
+              />
+              <div>
+                <h4>{game.title}</h4>
+                <p style={{ fontSize: '0.85em', color: '#666' }}>Username: {game.ingame_name}</p>
+                <p style={{ fontSize: '0.85em', color: '#666' }}>UID: {game.uid}</p>
               </div>
-            </li>
+            </div>
           ))}
         </ul>
       )}
