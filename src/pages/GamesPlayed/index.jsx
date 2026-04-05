@@ -42,8 +42,6 @@ function GamesPlayed() {
                 <div>
                   <h4>{game.title}</h4>
                   <p style={{ fontSize: '0.85em', color: '#666' }}>Username: {game.ingame_name}</p>
-                </div>
-                <div>
                   <p style={{ fontSize: '0.85em', color: '#666' }}>UID: {game.uid}</p>
                 </div>
               </div>
