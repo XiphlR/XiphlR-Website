@@ -1,5 +1,6 @@
 
 html, body, #root {
+  background-color: #0f1015;
   width: 100%;
   min-height: 100vh;
   margin: 0;
