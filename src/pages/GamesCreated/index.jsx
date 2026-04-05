@@ -1,17 +1,5 @@
 function GamesCreated() {
   const createdGames = [
-    { 
-      id: 1, 
-      title: 'Queue Simulator', 
-      engine: 'Django / Tailwind CSS', 
-      desc: 'โปรเจกต์จำลองระบบจัดการคิวร้านอาหารที่ต่อยอดเป็นมินิเกมได้' 
-    },
-    { 
-      id: 2, 
-      title: 'Beat & Podcast Player', 
-      engine: 'Flutter', 
-      desc: 'แอปพลิเคชันเล่นเพลงและพอดแคสต์พร้อมลูกเล่นอินเทอร์เฟซที่ลื่นไหล' 
-    },
   ];
 
   return (
