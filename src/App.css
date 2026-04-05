@@ -7,10 +7,19 @@ html, body, #root {
 }
 
 .app-wrapper {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); 
+}
+
+@media (max-width: 768px) {
+  .app-wrapper {
+    width: 100%;
+  }
 }
 
 .app-container {
@@ -81,7 +90,6 @@ html, body, #root {
   color: #3498db;
 }
 
-/* สีสำหรับเมนูที่กำลังเปิด (Active) */
 .nav-links a.active {
   color: #4a90e2;
   font-weight: bold;
