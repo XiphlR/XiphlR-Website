@@ -8,7 +8,7 @@ html, body, #root {
 
 .app-wrapper {
   background-color: #161925;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
