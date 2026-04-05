@@ -1,5 +1,5 @@
 html, body, #root {
-  background-color: #0f1015;
+  background-color: #080808;
   width: 100%;
   min-height: 100vh;
   margin: 0;
@@ -7,12 +7,14 @@ html, body, #root {
 }
 
 .app-wrapper {
+  background-color: #161925;
   width: 70%;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); 
+  
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); 
 }
 
 .app-container {
