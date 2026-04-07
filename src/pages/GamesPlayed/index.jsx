@@ -45,13 +45,13 @@ function GamesPlayed() {
                 <div className="game-tags">
                   {game.ingame_name && (
                     <span className="tag tag-username">
-                      👤 {game.ingame_name}
+                      Username: {game.ingame_name}
                     </span>
                   )}
                   
                   {game.uid && (
                     <span className="tag tag-uid">
-                      🆔 UID: {game.uid}
+                      UID: {game.uid}
                     </span>
                   )}
                 </div>
