@@ -89,17 +89,16 @@ html, body, #root {
   padding-bottom: 5px;
 }
 
-/* =========================================
-   สไตล์ที่แยกมาจากหน้า GamesPlayed 
-   ========================================= */
+
 .games-card {
-  padding: 20px;
+  padding: 30px;
 }
 
 .page-title {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   text-align: center;
   color: #ffffff;
+  font-size: 1.6rem;
 }
 
 .loading-text {
@@ -111,71 +110,78 @@ html, body, #root {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .game-list-item {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   align-items: center;
   background-color: #23273a;
-  padding: 15px 20px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  transition: transform 0.2s;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* เอฟเฟกต์ตอนเอาเมาส์ชี้กล่องเกม (Hover) */
 .game-list-item:hover {
-  transform: scale(1.02);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
 }
 
 .game-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 12px;
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
   object-fit: cover;
   border: 2px solid #34495e;
+  flex-shrink: 0;
 }
 
 .game-info {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .game-title {
-  margin-left: 0px;
-  margin: 0 0 10px 0;
-  font-size: 1.2rem;
+  margin: 0 0 12px 0;
+  font-size: 1.4rem;
   color: #ffffff;
+  text-align: left;
+  font-weight: 600;
 }
 
 .game-tags {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
-/* สไตล์พื้นฐานของป้ายแท็ก */
 .tag {
-  font-size: 0.85em;
-  padding: 4px 12px;
+  font-size: 0.9rem;
+  padding: 6px 14px;
   border-radius: 20px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  font-weight: 500;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.1);
 }
 
 .tag-username {
-  color: #e2e8f0;
-  background-color: #374151;
+  color: #f8fafc;
+  background-color: #3f4b5b;
 }
 
 .tag-uid {
-  color: #90cdf4;
-  background-color: #2a4365;
+  color: #bae6fd;
+  background-color: #1e3a5f;
 }
 
-/* ให้ @media อยู่ล่างสุดเสมอ */
 @media (max-width: 768px) {
   .app-wrapper {
     width: 100%;
